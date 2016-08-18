@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750,target-densitydpi=device-dpi,minimal-ui,user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="loading">
+    <img class="heartLoading" src="../img/loading.png"/>
+    <div class="number"></div>
+</div>
+
+<!-- 主页面开始 -->
+<div class="wp">
+    <div class="section main">
+
+        <div class="slot_machine">
+            <div class="slot_window" id="slot_window_1">
+                <img src="../img/t1.png" alt="" />
+                <img src="../img/t2.png" alt="" />
+                <img src="../img/t3.png" alt="" />
+                <img src="../img/t4.png" alt="" />
+                <img src="../img/t5.png" alt="" />
+                <img src="../img/t6.png" alt="" />
+                <img src="../img/t6.png" alt="" />
+                <img src="../img/t1.png" alt="" />
+            </div>
+            <div class="slot_window" id="slot_window_2">
+                <img src="../img/t1.png" alt="" />
+                <img src="../img/t7.png" alt="" />
+                <img src="../img/t3.png" alt="" />
+                <img src="../img/t3.png" alt="" />
+                <img src="../img/t4.png" alt="" />
+                <img src="../img/t3.png" alt="" />
+                <img src="../img/t2.png" alt="" />
+
+                <img src="../img/t1.png" alt="" />
+            </div>
+            <div class="slot_window" id="slot_window_3">
+                <img src="../img/t1.png" alt="" />
+                <img src="../img/t4.png" alt="" />
+                <img src="../img/t7.png" alt="" />
+                <img src="../img/t6.png" alt="" />
+                <img src="../img/t7.png" alt="" />
+                <img src="../img/t2.png" alt="" />
+                <img src="../img/t4.png" alt="" />
+                <img src="../img/t1.png" alt="" />
+            </div>
+        </div>
+        <div id="stop" class="stopButton buttonIn" >
+            <img src="../img/stop.png"/>
+        </div>
+        <div id="slotMachineButton1" class="againButton buttonIn" style=""  >
+            <img id="againImg" src="../img/again.png"/>
+        </div>
+    </div>
+</div>
+<!-- 主页面结束 -->
+
+<!--表单提交页面开始-->
+<div class="submitFrom">
+    <div class="name">
+        <input id="txtName" class="txtName" type="text" value="" maxlength="12"/>
+    </div>
+
+    <div class="phone">
+        <input id="txtPhone" class="txtPhone" type="tel" value="" maxlength="11"/>
+    </div>
+    <div class="form-bar location receiveCounter">
+        <input id="txtCity" type="text" value=""style="pointer-events:none">
+        <select id="city">
+            <option value="0">请选择领取柜台</option>
+            <option value="1">上海梅龙镇伊势丹</option>
+            <option value="2">上海百盛</option>
+            <option value="3">上海连卡佛</option>
+            <option value="4">北京新光</option>
+            <option value="5">北京汉光</option>
+            <option value="6">成都伊势丹</option>
+            <option value="7">成都太古里</option>
+            <option value="8">成都王府井</option>
+            <option value="9">成都王府井2店</option>
+            <option value="10">西安开元</option>
+            <option value="11">西安珠江</option>
+            <option value="12">西安金花</option>
+            <option value="13">西安高新金花</option>
+        </select>
+    </div>
+    <div class="submitTo">
+     <img src="../img/refer.png"/>
+    </div>
+
+    <div class="promptText">
+        <img src="../img/promptText.png"/>
+    </div>
+
+</div>
+<!--表单提交页面结束-->
+
+<!--截图页面开始-->
+<div class="screenshot">
+    <div class="replyText">
+        <img src="../img/replyText.png"/>
+    </div>
+</div>
+<!--截图页面结束-->
+<!--音乐播放开始-->
+<div class="main-title"></div>
+<audio autoplay="autoplay"  loop="loop" id="bgm" src="../media/bgm.mp3" width="0" height="0" style="display:none"></audio>
+<!--音乐播放结束-->
+
+<!--心形开始-->
+<div class="heart" style="display: none;">
+    <img class="heartImg" src="../img/heart.png"/>
+</div>
+<!--心形结束-->
+<!--延迟加载开始-->
+<div class="delayLoading" style="display: none;">
+    <div class="spinner">
+        <div class="spinner-container container1">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container2">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container3">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+    </div>
+</div>
+<!--延迟加载结束-->
+<script src="//wximg.qq.com/wxp/libs/wxmoment/0.0.4/wxmoment.min.js"></script>
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
